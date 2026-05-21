@@ -59,7 +59,7 @@
       }
     });
   }
-  wireForm('enquiryForm', 'formSuccess');
+  wireForm('inquiryForm', 'formSuccess');
   wireForm('newsForm', 'newsMsg');
 
   /* =========================================================
