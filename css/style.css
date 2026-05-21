@@ -781,11 +781,16 @@ body.preview #care,
 body.preview #leadership,
 body.preview #contact { display: none; }
 
-body.preview a[href="#developments"],
-body.preview a[href="#programs"],
-body.preview a[href="#care"],
-body.preview a[href="#leadership"],
-body.preview a[href="#contact"] { display: none; }
+/* Nav + mobile-menu links stay visible so the client sees the full menu.
+   Their target sections are still gated, so main.js makes these links inert
+   for now. Links inside the hero, feature, and footer would point nowhere
+   useful in this preview, so those stay hidden. */
+body.preview .hero__actions a[href="#developments"],
+body.preview .feature__text a[href="#care"],
+body.preview .footer__col a[href="#developments"],
+body.preview .footer__col a[href="#programs"],
+body.preview .footer__col a[href="#leadership"],
+body.preview .footer__col a[href="#contact"] { display: none; }
 
 body.preview .footer__grid { grid-template-columns: repeat(2, 1fr); }
 body.preview .footer__col--developments { display: none; }

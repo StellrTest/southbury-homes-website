@@ -80,6 +80,8 @@
         if (!target) return;
         e.preventDefault();
         if (menuOpen) setMenu(false);
+        /* gated section (preview mode): link is visible but inert */
+        if (id !== '#top' && target.offsetParent === null) return;
         var top = id === '#top' ? 0 : target.getBoundingClientRect().top + window.scrollY - 78;
         window.scrollTo({ top: top, behavior: reduced ? 'auto' : 'smooth' });
       });
@@ -122,6 +124,8 @@
       if (id !== '#top' && !target) return;
       e.preventDefault();
       if (menuOpen) setMenu(false);
+      /* gated section (preview mode): link is visible but inert */
+      if (target && target.offsetParent === null) return;
       lenis.scrollTo(target, { offset: id === '#top' ? 0 : -78, duration: 1.4 });
     });
   });
