@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Local tooling / editor
+.claude/
+*.log
+
+# Dependencies (none currently — static site)
+node_modules/

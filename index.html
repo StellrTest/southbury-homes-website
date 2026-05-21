@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Southbury Homes — Masterful Construction. Exceptional Living.</title>
+  <meta name="description" content="Southbury Homes builds distinguished residences across the Greater Toronto Area. Established 2005. Now releasing King Oak Estates and the Victoria Crown Collection." />
+  <meta name="theme-color" content="#1b1a17" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Southbury Homes — Masterful Construction. Exceptional Living." />
+  <meta property="og:description" content="Two decades of building distinguished homes across the Greater Toronto Area." />
+  <meta property="og:image" content="assets/img/hero.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script>
+    /* Gate animation initial-states before first paint; skip entirely for reduced-motion */
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('anim');
+    }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" id="preloader" role="presentation">
+    <div class="preloader__inner">
+      <span class="preloader__name">Southbury<em>Homes</em></span>
+      <span class="preloader__tag">Masterful Construction · Exceptional Living</span>
+    </div>
+    <div class="preloader__count"><span id="preloaderCount">0</span><span class="preloader__pct">%</span></div>
+    <div class="preloader__bar"><span class="preloader__bar-fill" id="preloaderFill"></span></div>
+  </div>
+
+  <!-- ============ SCROLL PROGRESS ============ -->
+  <div class="scroll-progress" aria-hidden="true"><span class="scroll-progress__bar" id="scrollProgress"></span></div>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="logo" aria-label="Southbury Homes, return to top" data-scroll-link>
+        <span class="logo__mark">Southbury</span>
+        <span class="logo__sub">Homes — Est. 2005</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#philosophy" data-scroll-link>Philosophy</a>
+        <a href="#developments" data-scroll-link>Developments</a>
+        <a href="#programs" data-scroll-link>Programs</a>
+        <a href="#leadership" data-scroll-link>Leadership</a>
+        <a href="#contact" data-scroll-link>Contact</a>
+      </nav>
+
+      <div class="nav__aside">
+        <a href="tel:+19056403709" class="nav__phone">905 640 3709</a>
+        <a href="#contact" class="btn btn--mini" data-scroll-link>Enquire</a>
+      </div>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navOverlay">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ MOBILE OVERLAY MENU ============ -->
+  <div class="menu" id="navOverlay" aria-hidden="true">
+    <nav class="menu__nav" aria-label="Mobile">
+      <a href="#philosophy" data-scroll-link><span class="menu__index">01</span>Philosophy</a>
+      <a href="#developments" data-scroll-link><span class="menu__index">02</span>Developments</a>
+      <a href="#programs" data-scroll-link><span class="menu__index">03</span>Programs</a>
+      <a href="#care" data-scroll-link><span class="menu__index">04</span>Your Home, Our Care</a>
+      <a href="#leadership" data-scroll-link><span class="menu__index">05</span>Leadership</a>
+      <a href="#contact" data-scroll-link><span class="menu__index">06</span>Contact</a>
+    </nav>
+    <div class="menu__foot">
+      <a href="tel:+19056403709">905 640 3709</a>
+      <a href="mailto:info@southburyhomes.ca">info@southburyhomes.ca</a>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="hero__media">
+        <video class="hero__video" autoplay muted loop playsinline poster="assets/img/hero.jpg">
+          <source src="assets/video/hero.mp4" type="video/mp4" />
+        </video>
+        <div class="hero__scrim"></div>
+      </div>
+
+      <div class="hero__content">
+        <p class="eyebrow eyebrow--light" data-reveal>Greater Toronto Area — Established 2005</p>
+        <h1 class="hero__title">
+          <span class="line" data-line>Masterful construction.</span>
+          <span class="line" data-line><em>Exceptional living.</em></span>
+        </h1>
+        <p class="hero__sub" data-reveal>For two decades, Southbury Homes has built distinguished residences across the GTA — where craftsmanship is the standard, never the upgrade.</p>
+        <div class="hero__actions" data-reveal>
+          <a href="#developments" class="btn btn--light" data-scroll-link>Explore Developments</a>
+          <a href="#philosophy" class="link-underline link-underline--light" data-scroll-link>Our Philosophy</a>
+        </div>
+      </div>
+
+      <a href="#philosophy" class="hero__scroll" data-scroll-link aria-label="Scroll to discover">
+        <span>Scroll</span>
+        <span class="hero__scroll-line"><i></i></span>
+      </a>
+    </section>
+
+    <!-- ============ PHILOSOPHY ============ -->
+    <section class="section philosophy" id="philosophy">
+      <div class="wrap">
+        <p class="eyebrow" data-reveal>Our Philosophy</p>
+        <h2 class="statement" data-lines>
+          We believe a home is the most considered thing a person ever commissions. Since 2005, we have built across the Greater Toronto Area to a single, unwavering standard — <em>our own.</em>
+        </h2>
+
+        <div class="pillars" data-stagger>
+          <article class="pillar" data-stagger-item>
+            <span class="pillar__num">01</span>
+            <h3 class="pillar__title">Craftsmanship</h3>
+            <p class="pillar__body">Every home is built by people who have done this for decades — and who put their name to the work.</p>
+          </article>
+          <article class="pillar" data-stagger-item>
+            <span class="pillar__num">02</span>
+            <h3 class="pillar__title">Design</h3>
+            <p class="pillar__body">Architecture drawn from its street, proportioned for the way families genuinely live.</p>
+          </article>
+          <article class="pillar" data-stagger-item>
+            <span class="pillar__num">03</span>
+            <h3 class="pillar__title">Sustainability</h3>
+            <p class="pillar__body">Through our Harmony program, efficiency and comfort are designed in from the very first drawing.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CRAFTSMANSHIP FEATURE ============ -->
+    <section class="section feature">
+      <div class="wrap feature__grid">
+        <div class="feature__media" data-img-reveal>
+          <img src="assets/img/craft.jpg" alt="Interior craftsmanship of a Southbury home" width="1100" height="1375" data-parallax data-parallax-speed="-9" />
+          <span class="feature__caption">No. 01 — The Craft</span>
+        </div>
+        <div class="feature__text">
+          <p class="eyebrow" data-reveal>Masterful Construction</p>
+          <h2 class="h-display" data-lines>A standard that does not bend.</h2>
+          <p class="prose" data-reveal>From the first excavation to the final walk-through, a Southbury home is managed by one team, accountable for one outcome. Nothing is left to chance, and nothing is quietly compromised.</p>
+          <p class="prose" data-reveal>Our principals have spent more than two decades on GTA sites. That experience shows in the quiet places — the framing you will never see, and the finishing you will never stop noticing.</p>
+          <a href="#care" class="link-underline" data-scroll-link data-reveal>Discover our process</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PARALLAX QUOTE BREAK ============ -->
+    <section class="break" aria-label="The Southbury Standard">
+      <div class="break__media">
+        <img src="assets/img/interior-wide.jpg" alt="A luxury interior built by Southbury Homes" width="2400" height="1350" data-parallax data-parallax-speed="14" />
+        <div class="break__scrim"></div>
+      </div>
+      <div class="break__content wrap">
+        <blockquote class="break__quote" data-lines>
+          Every home we build carries our name — so we build as though it carries everything.
+        </blockquote>
+        <p class="break__by" data-reveal>The Southbury Standard</p>
+      </div>
+    </section>
+
+    <!-- ============ DEVELOPMENTS ============ -->
+    <section class="section developments" id="developments">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow" data-reveal>Current Developments</p>
+          <h2 class="h-display" data-lines>Two collections, one standard.</h2>
+          <p class="section-head__lead" data-reveal>Each Southbury community is a deliberate response to its setting — its streets, its trees, and the families who will call it home.</p>
+        </header>
+
+        <article class="project" data-project>
+          <a class="project__media" href="#contact" data-scroll-link data-img-reveal aria-label="Register interest in King Oak Estates">
+            <img src="assets/img/king-oak.jpg" alt="King Oak Estates, Richmond Hill" width="1400" height="1000" />
+            <span class="project__status">Now Selling</span>
+          </a>
+          <div class="project__panel">
+            <span class="project__index">Development 01</span>
+            <h3 class="project__name" data-lines>King Oak Estates</h3>
+            <p class="project__meta" data-reveal>Richmond Hill — Detached &amp; Semi-Detached Residences</p>
+            <p class="prose" data-reveal>A limited release of detached and semi-detached homes in one of Richmond Hill's most established enclaves — generous proportions, mature streets, and architecture in considered conversation with the neighbourhood it joins.</p>
+            <a href="#contact" class="link-underline" data-scroll-link data-reveal>Register Interest<span class="link-arrow" aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="project project--reverse" data-project>
+          <a class="project__media" href="#contact" data-scroll-link data-img-reveal aria-label="Register interest in the Victoria Crown Collection">
+            <img src="assets/img/victoria.jpg" alt="Victoria Crown Collection, Markham" width="1400" height="1000" />
+            <span class="project__status project__status--soon">Coming Soon</span>
+          </a>
+          <div class="project__panel">
+            <span class="project__index">Development 02</span>
+            <h3 class="project__name" data-lines>Victoria Crown Collection</h3>
+            <p class="project__meta" data-reveal>Markham — Luxury Townhomes</p>
+            <p class="prose" data-reveal>Contemporary luxury townhomes in the heart of Markham, where refined urban living meets the ease of a true residential community. Priority registration is now open for first access.</p>
+            <a href="#contact" class="link-underline" data-scroll-link data-reveal>Register Interest<span class="link-arrow" aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PROGRAMS ============ -->
+    <section class="section programs" id="programs">
+      <div class="wrap">
+        <header class="section-head section-head--center">
+          <p class="eyebrow" data-reveal>The Southbury Programs</p>
+          <h2 class="h-display" data-lines>Comfort, by design.</h2>
+          <p class="section-head__lead" data-reveal>Two programs, included in every Southbury home — because the way a home performs should never be an afterthought.</p>
+        </header>
+
+        <div class="cards" data-stagger>
+          <article class="card" data-stagger-item>
+            <div class="card__media">
+              <img src="assets/img/harmony.jpg" alt="A bright, sustainable Southbury interior" width="1200" height="900" loading="lazy" />
+            </div>
+            <div class="card__body">
+              <div class="card__head">
+                <h3 class="card__title">Harmony</h3>
+                <span class="card__tag">Environmental Performance</span>
+              </div>
+              <p class="card__text">Energy-efficient construction and a measurably lighter footprint — designed in from the first drawing, so comfort never comes at the environment's expense.</p>
+              <span class="card__line" aria-hidden="true"></span>
+            </div>
+          </article>
+
+          <article class="card" data-stagger-item>
+            <div class="card__media">
+              <img src="assets/img/comfort.jpg" alt="An intelligent, comfortable Southbury living space" width="1200" height="900" loading="lazy" />
+            </div>
+            <div class="card__body">
+              <div class="card__head">
+                <h3 class="card__title">Comfort+</h3>
+                <span class="card__tag">Intelligent Living</span>
+              </div>
+              <p class="card__text">Smart-home technology and monitoring integrated throughout — a home that anticipates, adjusts, and quietly looks after itself, and you.</p>
+              <span class="card__line" aria-hidden="true"></span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ YOUR HOME, OUR CARE ============ -->
+    <section class="section feature feature--alt" id="care">
+      <div class="wrap feature__grid feature__grid--reverse">
+        <div class="feature__media" data-img-reveal>
+          <img src="assets/img/care.jpg" alt="Southbury Homes construction craftsmanship" width="1100" height="1375" data-parallax data-parallax-speed="-9" />
+          <span class="feature__caption">No. 02 — The Care</span>
+        </div>
+        <div class="feature__text">
+          <p class="eyebrow" data-reveal>Your Home, Our Care</p>
+          <h2 class="h-display" data-lines>The relationship begins at the keys.</h2>
+          <p class="prose" data-reveal>For many builders, handover is the end. For Southbury, it is the part of the relationship that lasts the longest.</p>
+          <p class="prose" data-reveal>Every homeowner is supported by a dedicated service team and our Comfort+ monitoring — so the home you move into keeps performing for the decades you live in it.</p>
+          <a href="#contact" class="link-underline" data-scroll-link data-reveal>Speak with our team</a>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <dl class="stats" data-stagger>
+          <div class="stat" data-stagger-item>
+            <dt class="stat__num">2005</dt>
+            <dd class="stat__label">Year Established</dd>
+          </div>
+          <div class="stat" data-stagger-item>
+            <dt class="stat__num"><span data-count data-count-to="20">0</span><span class="stat__suffix">+</span></dt>
+            <dd class="stat__label">Years of Masterful Construction</dd>
+          </div>
+          <div class="stat" data-stagger-item>
+            <dt class="stat__num"><span data-count data-count-to="65">0</span><span class="stat__suffix">+</span></dt>
+            <dd class="stat__label">Years of Combined Site Experience</dd>
+          </div>
+          <div class="stat" data-stagger-item>
+            <dt class="stat__num"><span data-count data-count-to="100">0</span><span class="stat__suffix">%</span></dt>
+            <dd class="stat__label">Single-Team Project Accountability</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ LEADERSHIP ============ -->
+    <section class="section leadership" id="leadership">
+      <div class="wrap leadership__grid">
+        <aside class="leadership__aside">
+          <div class="leadership__sticky">
+            <p class="eyebrow" data-reveal>Leadership</p>
+            <h2 class="h-display" data-lines>The people accountable for it all.</h2>
+            <p class="prose" data-reveal>Southbury is led by a close group of builders and operators — many of whom have worked together on Greater Toronto Area sites for more than twenty years.</p>
+            <div class="leadership__media" data-img-reveal>
+              <img src="assets/img/leadership.jpg" alt="Architecture by Southbury Homes" width="1100" height="1375" data-parallax data-parallax-speed="-7" />
+            </div>
+          </div>
+        </aside>
+
+        <ul class="roster" data-stagger>
+          <li class="roster__row" data-stagger-item>
+            <span class="roster__index">01</span>
+            <span class="roster__name">Marco Puopolo</span>
+            <span class="roster__role">Founder &amp; Owner</span>
+            <span class="roster__bio">Founded Southbury Homes in 2005, with a background in mortgage financing.</span>
+          </li>
+          <li class="roster__row" data-stagger-item>
+            <span class="roster__index">02</span>
+            <span class="roster__name">Enzo Raponi</span>
+            <span class="roster__role">President &amp; CEO</span>
+            <span class="roster__bio">More than 25 years of mortgage and financial leadership.</span>
+          </li>
+          <li class="roster__row" data-stagger-item>
+            <span class="roster__index">03</span>
+            <span class="roster__name">Mark Raponi</span>
+            <span class="roster__role">Owner</span>
+            <span class="roster__bio">Partner and principal, guiding the company's growth across the GTA.</span>
+          </li>
+          <li class="roster__row" data-stagger-item>
+            <span class="roster__index">04</span>
+            <span class="roster__name">Carlo Taurasi</span>
+            <span class="roster__role">Project Controls</span>
+            <span class="roster__bio">25+ years in residential homebuilding and project delivery.</span>
+          </li>
+          <li class="roster__row" data-stagger-item>
+            <span class="roster__index">05</span>
+            <span class="roster__name">Dino Taurasi</span>
+            <span class="roster__role">Construction Lead</span>
+            <span class="roster__bio">25+ years leading construction on Greater Toronto Area sites.</span>
+          </li>
+          <li class="roster__row" data-stagger-item>
+            <span class="roster__index">06</span>
+            <span class="roster__name">Dennie Taurasi</span>
+            <span class="roster__role">Site Director</span>
+            <span class="roster__bio">15 years dedicated to finishing and quality control.</span>
+          </li>
+          <li class="roster__row" data-stagger-item>
+            <span class="roster__index">07</span>
+            <span class="roster__name">Frank Uccello</span>
+            <span class="roster__role">Sales Representative</span>
+            <span class="roster__bio">Guiding buyers through every Southbury release, from enquiry to keys.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="wrap contact__grid">
+        <div class="contact__intro">
+          <p class="eyebrow" data-reveal>Enquire</p>
+          <h2 class="h-display" data-lines>Begin a conversation.</h2>
+          <p class="prose" data-reveal>Whether you are registering for a new release or already living in a Southbury home, our team would be glad to hear from you.</p>
+
+          <div class="contact__details" data-stagger>
+            <div class="contact__item" data-stagger-item>
+              <span class="contact__label">Sales Office</span>
+              <p>2–38 Innovator Avenue<br />Stouffville, Ontario L4A 0Y2</p>
+            </div>
+            <div class="contact__item" data-stagger-item>
+              <span class="contact__label">Telephone</span>
+              <p><a href="tel:+19056403709">905 640 3709</a></p>
+            </div>
+            <div class="contact__item" data-stagger-item>
+              <span class="contact__label">General Enquiries</span>
+              <p><a href="mailto:info@southburyhomes.ca">info@southburyhomes.ca</a></p>
+            </div>
+            <div class="contact__item" data-stagger-item>
+              <span class="contact__label">New Home Sales</span>
+              <p><a href="mailto:sales@southburyhomes.ca">sales@southburyhomes.ca</a></p>
+            </div>
+            <div class="contact__item" data-stagger-item>
+              <span class="contact__label">Homeowner Service</span>
+              <p><a href="mailto:service@southburyhomes.ca">service@southburyhomes.ca</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact__form-wrap" data-reveal>
+          <form class="form" id="enquiryForm" novalidate>
+            <div class="form__row">
+              <div class="field">
+                <label for="f-name">Full name</label>
+                <input type="text" id="f-name" name="name" autocomplete="name" required />
+              </div>
+            </div>
+            <div class="form__row form__row--two">
+              <div class="field">
+                <label for="f-email">Email</label>
+                <input type="email" id="f-email" name="email" autocomplete="email" required />
+              </div>
+              <div class="field">
+                <label for="f-phone">Phone</label>
+                <input type="tel" id="f-phone" name="phone" autocomplete="tel" />
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="field">
+                <label for="f-interest">Area of interest</label>
+                <select id="f-interest" name="interest">
+                  <option value="King Oak Estates">King Oak Estates — Richmond Hill</option>
+                  <option value="Victoria Crown Collection">Victoria Crown Collection — Markham</option>
+                  <option value="General enquiry">General enquiry</option>
+                  <option value="Homeowner service">Existing homeowner service</option>
+                </select>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="field">
+                <label for="f-message">Message</label>
+                <textarea id="f-message" name="message" rows="4"></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn--dark btn--full">Send Enquiry</button>
+            <p class="form__note">We typically respond within one business day.</p>
+            <p class="form__success" id="formSuccess" role="status" hidden>
+              Thank you — your enquiry has reached the Southbury team. We will be in touch shortly.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <span class="footer__mark">Southbury<em>Homes</em></span>
+          <p class="footer__tag">Masterful construction. Exceptional living.</p>
+        </div>
+        <form class="footer__news" id="newsForm" novalidate aria-label="Newsletter signup">
+          <label for="f-news">Receive news of new releases</label>
+          <div class="footer__news-row">
+            <input type="email" id="f-news" name="news-email" placeholder="Email address" required />
+            <button type="submit" aria-label="Subscribe">→</button>
+          </div>
+          <p class="footer__news-msg" id="newsMsg" role="status" hidden>Thank you for subscribing.</p>
+        </form>
+      </div>
+
+      <div class="footer__grid">
+        <nav class="footer__col" aria-label="Footer">
+          <span class="footer__col-title">Explore</span>
+          <a href="#philosophy" data-scroll-link>Philosophy</a>
+          <a href="#developments" data-scroll-link>Developments</a>
+          <a href="#programs" data-scroll-link>Programs</a>
+          <a href="#leadership" data-scroll-link>Leadership</a>
+        </nav>
+        <div class="footer__col">
+          <span class="footer__col-title">Developments</span>
+          <a href="#developments" data-scroll-link>King Oak Estates</a>
+          <a href="#developments" data-scroll-link>Victoria Crown Collection</a>
+          <a href="#contact" data-scroll-link>Register Interest</a>
+        </div>
+        <div class="footer__col">
+          <span class="footer__col-title">Contact</span>
+          <a href="tel:+19056403709">905 640 3709</a>
+          <a href="mailto:info@southburyhomes.ca">info@southburyhomes.ca</a>
+          <a href="mailto:service@southburyhomes.ca">service@southburyhomes.ca</a>
+          <span class="footer__addr">2–38 Innovator Avenue, Stouffville, ON</span>
+        </div>
+      </div>
+
+      <div class="footer__base">
+        <p>&copy; <span id="year">2026</span> Southbury Homes. All rights reserved.</p>
+        <p class="footer__base-mid">Building across the Greater Toronto Area</p>
+        <a href="#top" class="footer__top-link" data-scroll-link>Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
