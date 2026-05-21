@@ -766,3 +766,26 @@ body.menu-open .menu__nav a:nth-child(6) { transition-delay: 0.46s; }
   .hero__scroll-line i { display: none; }
   html { scroll-behavior: auto; }
 }
+
+/* =========================================================
+   PREVIEW MODE
+   Gates the public preview to: Hero -> Philosophy -> Craftsmanship
+   -> Break, plus the Footer. Every other section stays in the
+   markup but is hidden, along with any nav/footer link that
+   points to a hidden section. To publish the full site, remove
+   class="preview" from the <body> tag in index.html.
+   ========================================================= */
+body.preview #developments,
+body.preview #programs,
+body.preview #care,
+body.preview #leadership,
+body.preview #contact { display: none; }
+
+body.preview a[href="#developments"],
+body.preview a[href="#programs"],
+body.preview a[href="#care"],
+body.preview a[href="#leadership"],
+body.preview a[href="#contact"] { display: none; }
+
+body.preview .footer__grid { grid-template-columns: repeat(2, 1fr); }
+body.preview .footer__col--developments { display: none; }
