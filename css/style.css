@@ -424,7 +424,7 @@ body.menu-open .menu__nav > *:nth-child(5) { transition-delay: 0.40s; }
    PHILOSOPHY
    ========================================================= */
 .philosophy { background: var(--bone); }
-.philosophy .statement { margin-bottom: clamp(2.4rem, 4vw, 3.8rem); max-width: 26ch; }
+.philosophy .statement { margin-bottom: clamp(2.4rem, 4vw, 3.8rem); max-width: 40ch; }
 
 .pillars {
   display: grid; grid-template-columns: repeat(3, 1fr);
