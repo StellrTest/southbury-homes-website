@@ -671,6 +671,7 @@ body.menu-open .menu__nav > *:nth-child(5) { transition-delay: 0.40s; }
   display: grid; grid-template-columns: 0.85fr 1.15fr;
   gap: clamp(2rem, 5vw, 4.5rem); align-items: center;
 }
+.person--reverse { grid-template-columns: 1.15fr 0.85fr; }
 .person--reverse .person__text { order: 1; }
 .person--reverse .person__media { order: 2; }
 .person__media { margin-top: 0; }
