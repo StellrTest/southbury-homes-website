@@ -844,6 +844,9 @@ body.menu-open .menu__nav > *:nth-child(5) { transition-delay: 0.40s; }
 
 @media (max-width: 760px) {
   :root { --section-y: clamp(3.25rem, 9vw, 4.5rem); }
+  /* Philosophy: match the two red paragraphs at one size on mobile */
+  .philosophy .statement--red,
+  .philosophy .statement-add { font-size: 1.5rem; line-height: 1.42; }
   .pillars { grid-template-columns: 1fr; gap: 2.4rem; }
   .pillars { padding-top: 2.4rem; }
   .cards { grid-template-columns: 1fr; }
