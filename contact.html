@@ -147,6 +147,11 @@
 
         <div class="contact__form-wrap" data-reveal>
           <form class="form" id="inquiryForm" novalidate>
+            <!-- Web3Forms: paste your access key from web3forms.com into value="" to activate email delivery -->
+            <input type="hidden" name="access_key" value="" />
+            <input type="hidden" name="subject" value="New inquiry from the Southbury Homes website" />
+            <input type="hidden" name="from_name" value="Southbury Homes Website" />
+            <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none !important;" />
             <div class="form__row">
               <div class="field">
                 <label for="f-name">Full name</label>

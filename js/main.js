@@ -113,19 +113,48 @@
     closeDropdowns();
   });
 
-  /* ---------------- Forms (styled, no backend) ---------------- */
+  /* ---------------- Forms ----------------
+     If the form has a non-empty Web3Forms access_key, submit via fetch to
+     https://api.web3forms.com/submit. Otherwise fall back to a cosmetic
+     success message (keeps the site safe before the key is configured). */
   function wireForm(formId, msgId) {
     var form = document.getElementById(formId);
     var msg = document.getElementById(msgId);
     if (!form || !msg) return;
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      if (!form.checkValidity()) { form.reportValidity(); return; }
+
+    function showSuccess() {
       msg.hidden = false;
       form.reset();
       if (gsap && !reduced) {
         gsap.fromTo(msg, { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.6, ease: 'power2.out' });
       }
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (!form.checkValidity()) { form.reportValidity(); return; }
+
+      var keyField = form.querySelector('[name="access_key"]');
+      var hasKey = keyField && keyField.value.trim();
+      if (!hasKey) { showSuccess(); return; } // backend not configured yet
+
+      var btn = form.querySelector('button[type="submit"]');
+      if (btn) { btn.disabled = true; }
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form)
+      })
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          if (data && data.success) { showSuccess(); }
+          else { window.alert('Sorry, something went wrong sending your message. Please email info@southburyhomes.ca.'); }
+        })
+        .catch(function () {
+          window.alert('Sorry, something went wrong sending your message. Please email info@southburyhomes.ca.');
+        })
+        .then(function () { if (btn) { btn.disabled = false; } });
     });
   }
   wireForm('inquiryForm', 'formSuccess');
