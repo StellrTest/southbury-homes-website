@@ -97,8 +97,8 @@ ul { list-style: none; }
 .statement em { font-style: italic; color: var(--bronze-deep); }
 .statement-add {
   font-family: var(--font-display); font-weight: 400;
-  font-size: clamp(1.55rem, 3.5vw, 3.05rem); line-height: 1.34;
-  letter-spacing: -0.005em; color: var(--ink); max-width: 40ch;
+  font-size: clamp(1.4rem, 3vw, 2.6rem); line-height: 1.36;
+  letter-spacing: -0.005em; color: var(--ink); max-width: 44ch;
 }
 .h-display em { font-style: italic; }
 
