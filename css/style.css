@@ -95,11 +95,10 @@ ul { list-style: none; }
   max-width: 20ch;
 }
 .statement em { font-style: italic; color: var(--bronze-deep); }
-.statement--red, .statement--red em { color: #b5302a; }
 .statement-add {
   font-family: var(--font-display); font-weight: 400;
-  font-size: clamp(1.2rem, 1.7vw, 1.6rem); line-height: 1.5;
-  color: #b5302a; max-width: 60ch;
+  font-size: clamp(1.55rem, 3.5vw, 3.05rem); line-height: 1.34;
+  letter-spacing: -0.005em; color: var(--ink); max-width: 40ch;
 }
 .h-display em { font-style: italic; }
 
@@ -439,7 +438,6 @@ body.menu-open .menu__nav > *:nth-child(5) { transition-delay: 0.40s; }
    ========================================================= */
 .philosophy { background: var(--bone); }
 .philosophy .statement { margin-bottom: clamp(2.4rem, 4vw, 3.8rem); max-width: 40ch; }
-.philosophy .statement--red { margin-bottom: clamp(1.3rem, 2.4vw, 2rem); }
 .philosophy .statement-add { margin-bottom: clamp(2.4rem, 4vw, 3.8rem); }
 
 .pillars {
@@ -844,9 +842,6 @@ body.menu-open .menu__nav > *:nth-child(5) { transition-delay: 0.40s; }
 
 @media (max-width: 760px) {
   :root { --section-y: clamp(3.25rem, 9vw, 4.5rem); }
-  /* Philosophy: match the two red paragraphs at one size on mobile */
-  .philosophy .statement--red,
-  .philosophy .statement-add { font-size: 1.5rem; line-height: 1.42; }
   .pillars { grid-template-columns: 1fr; gap: 2.4rem; }
   .pillars { padding-top: 2.4rem; }
   .cards { grid-template-columns: 1fr; }
