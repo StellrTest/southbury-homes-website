@@ -617,7 +617,6 @@ body.menu-open .menu__nav > *:nth-child(5) { transition-delay: 0.40s; }
   margin-top: clamp(2.8rem, 4.5vw, 4.2rem);
   padding-top: clamp(2.4rem, 3.5vw, 3.2rem);
 }
-.stats--pair { grid-template-columns: repeat(2, 1fr); max-width: 52rem; }
 .stat__num {
   font-family: var(--font-display); font-weight: 400;
   font-size: clamp(2.7rem, 5.4vw, 4.6rem); line-height: 1;
